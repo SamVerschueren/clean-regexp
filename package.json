@@ -1,6 +1,6 @@
 {
   "name": "clean-regexp",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Clean up regular expressions",
   "license": "MIT",
   "repository": "SamVerschueren/clean-regexp",
@@ -20,14 +20,14 @@
     "lib"
   ],
   "keywords": [
-		"regex",
-		"regexp",
-		"regular",
-		"expression",
-		"clean",
-		"cleanup",
-		"digit",
-		"word"
+    "regex",
+    "regexp",
+    "regular",
+    "expression",
+    "clean",
+    "cleanup",
+    "digit",
+    "word"
   ],
   "dependencies": {
     "escape-string-regexp": "^1.0.5"
