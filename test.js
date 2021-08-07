@@ -1,5 +1,5 @@
 import test from 'ava';
-import m from '.';
+import m from './index.js';
 
 function macro(t, regex, flags, expected) {
 	if (!expected) {
@@ -43,6 +43,12 @@ test(macro, '[0-9]+\\.[^0-9]?\\.[a-zA-Z0-9_]+\\.[^a-z0-9_]', 'i', '\\d+\\.\\D?\\
 test(macro, '[0-9]+\\.[^0-9]?\\.[a-zA-Z0-9_]+\\.[^a-z0-9_]', 'g', '\\d+\\.\\D?\\.\\w+\\.[^a-z0-9_]');
 
 test('error', t => {
-	t.throws(() => m(98), 'Expected regexp to be of type `string`, got `number`');
-	t.throws(() => m('[0-9]', {}), 'Expected flags to be of type `string`, got `object`');
+	t.throws(() => m(98), {
+		message: 'Expected regexp to be of type `string`, got `number`',
+		name: 'TypeError',
+	});
+	t.throws(() => m('[0-9]', {}), {
+		message: 'Expected flags to be of type `string`, got `object`',
+		name: 'TypeError',
+	});
 });
