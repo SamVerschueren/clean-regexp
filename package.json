@@ -9,8 +9,9 @@
     "email": "sam.verschueren@gmail.com",
     "url": "github.com/SamVerschueren"
   },
+  "type": "module",
   "engines": {
-    "node": ">=4"
+    "node": "12.20"
   },
   "scripts": {
     "test": "xo && ava"
@@ -30,7 +31,7 @@
     "word"
   ],
   "dependencies": {
-    "escape-string-regexp": "^1.0.5"
+    "escape-string-regexp": "^5.0.0"
   },
   "devDependencies": {
     "ava": "*",
