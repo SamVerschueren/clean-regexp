@@ -30,7 +30,7 @@
     "word"
   ],
   "dependencies": {
-    "escape-string-regexp": "^1.0.5"
+    "escape-string-regexp": "^4.0.0"
   },
   "devDependencies": {
     "ava": "^6.1.3",
