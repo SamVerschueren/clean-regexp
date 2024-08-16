@@ -1,6 +1,6 @@
 'use strict';
 const escapeStringRegexp = require('escape-string-regexp');
-const mapping = require('./lib/mappings');
+const mapping = require('./lib/mappings.js');
 
 const hasFlags = (regexFlags, replaceFlags) => {
 	if (!replaceFlags) {
@@ -11,9 +11,7 @@ const hasFlags = (regexFlags, replaceFlags) => {
 	return replaceFlags.split('').every(flag => regexFlags.includes(flag));
 };
 
-module.exports = (regexp, flags) => {
-	flags = flags || '';
-
+module.exports = (regexp, flags = '') => {
 	if (typeof regexp !== 'string') {
 		throw new TypeError(`Expected regexp to be of type \`string\`, got \`${typeof regexp}\``);
 	}

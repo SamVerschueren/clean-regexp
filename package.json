@@ -10,7 +10,7 @@
     "url": "github.com/SamVerschueren"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=16"
   },
   "scripts": {
     "test": "xo && ava"
@@ -33,7 +33,7 @@
     "escape-string-regexp": "^1.0.5"
   },
   "devDependencies": {
-    "ava": "*",
-    "xo": "*"
+    "ava": "^6.1.3",
+    "xo": "0.39.1"
   }
 }

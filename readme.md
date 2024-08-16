@@ -1,4 +1,4 @@
-# clean-regexp [![Build Status](https://travis-ci.org/SamVerschueren/clean-regexp.svg?branch=master)](https://travis-ci.org/SamVerschueren/clean-regexp)
+# clean-regexp ![CI](https://github.com/SamVerschueren/clean-regexp/workflows/CI/badge.svg)
 
 > Clean up regular expressions
 
